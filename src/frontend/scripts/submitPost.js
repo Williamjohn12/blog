@@ -1,4 +1,4 @@
-
+import { HOST } from "../../util/config";
 /*function submitPost() {
   const boxA = document.getElementById("box-put");
 
@@ -31,7 +31,7 @@ const boxC = document.getElementById("box-putc");
     const content = document.getElementById("box-putb").value;
     const description = document.getElementById("box-putc").value;
 
-    const response = await fetch('http://localhost:3000/create', {
+    const response = await fetch(`${HOST}/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

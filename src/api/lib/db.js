@@ -1,11 +1,11 @@
 import pg from 'pg';
-import dotenv from 'dotenv';
+import { DBSTRING } from '../../util/config';
+
 
 const { Client } = pg;
 
 let clientInstance = null;
 const { Pool } = pg;
-dotenv.config();
 
 export const getDbClient = () => {
   if (clientInstance) {
@@ -21,7 +21,7 @@ export const getDbClient = () => {
   }
   }); */
   clientInstance = new Pool({
-    connectionString: process.env.DB_STRING,
+    connectionString: DBSTRING,
     ssl: {
       rejectUnauthorized: false
     }

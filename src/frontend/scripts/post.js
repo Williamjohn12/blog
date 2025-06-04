@@ -1,9 +1,9 @@
-
+import { HOST } from "../../util/config";
 
 async function getPosts() {
     try {
         // Fetch posts data
-        const response = await fetch('http://localhost:3000/get-all');
+        const response = await fetch(`${HOST}/get-all`);
         const data = await response.json();
         
         // Get the container element
@@ -85,7 +85,7 @@ async function getPosts() {
 // Function to delete a post
 async function deletePost(postId, domElement) {
     try {
-        const response = await fetch(`http://localhost:3000/delete/${postId}`, {
+        const response = await fetch(`${HOST}/delete/${postId}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
