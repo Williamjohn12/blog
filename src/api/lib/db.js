@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 const { Client } = pg;
 
 let clientInstance = null;
+const { Pool } = pg;
 dotenv.config();
 
 export const getDbClient = () => {
@@ -13,11 +14,17 @@ export const getDbClient = () => {
   }
   
   // Otherwise, create a new client instance
-  clientInstance = new Client({
+  /*clientInstance = new Client({
     connectionString: process.env.DB_STRING,
     ssl: {
     rejectUnauthorized: false
   }
+  }); */
+  clientInstance = new Pool({
+    connectionString: process.env.DB_STRING,
+    ssl: {
+      rejectUnauthorized: false
+    }
   });
 
   clientInstance.connect()
