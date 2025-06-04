@@ -14,7 +14,10 @@ export const getDbClient = () => {
   
   // Otherwise, create a new client instance
   clientInstance = new Client({
-    connectionString: process.env.DB_STRING
+    connectionString: process.env.DB_STRING,
+    ssl: {
+    rejectUnauthorized: false
+  }
   });
 
   clientInstance.connect()
