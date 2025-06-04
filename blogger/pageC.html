@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="page3.css">
+    <title>Bloggy Blog | Creator</title>
+</head>
+<body>
+    <header class="blog-boot">
+        <nav class="bnav bnavmaj">
+            <ul>
+                <li><a href="page.html">Bloggy Home</a></li>
+                <li><a href="pageV.html">Bloggy View</a></li>
+                <li><a href="pageC.html">Bloggy Create</a></li>
+            </ul>
+        </nav>
+        <div class="Blog-title">Bloggy Blog Create</div>
+    </header>
+    
+    <section>
+        <div class="crt-blgy">
+            <h2 class="crt-her">Create Blog Here!</h2>
+            <div class="box-c">   
+                <form id="postForm">
+                    <div>
+                        <label for="box-put" class="blg-bg postheading">Blog Title</label>
+                        <input type="text" id="box-put" class="box-put postTitle" required name="title" autocomplete="off" placeholder="Title your Blog!" maxlength="68">
+                    </div>
+                    <div>
+                        <label for="content" class="blg-bg">Blog Body</label>
+                        <input name="content" id="box-putb" autocomplete="off" class="box-putb" required placeholder="Start Your Blog!" maxlength="30000"></input>
+                    </div>
+                    <div>
+                        <label for="box-putc" class="blg-bg">Blog Description</label>
+                        <input name="description" id="box-putc" autocomplete="off" class="box-putc"  required placeholder="Describe Your Blog!" maxlength="159">
+                    </div>
+                    <div>
+                        <button type="button" id="Post" class="pust" onclick="submitPost()">Post</button>
+                        <button type="button" id="Reost" class="clust" onclick="RemovePost()">Reset</button>
+                    </div>
+                </form>
+                <ul id="Vissy" class="Vissy"></ul>
+            </div>
+        </div>
+    </section>
+    
+    <script src="page2.js"></script>
+    
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <p class="wordak">&copy; 2025 BlogCorp</p>
+        </div>
+    </footer>
+</body>
+</html>

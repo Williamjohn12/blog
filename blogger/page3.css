@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(82, 169, 172);
+    
+    
+}
+
+.Blog-title {
+    text-align: center;
+    font-size: 4em;
+    
+
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.bnav ul{
+    margin: 0;
+}
+
+.bnav li{
+    display: inline;
+}
+.bnav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: rgb(82,169,172);
+    text-decoration: none;
+
+}
+.bnavmaj {
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+     color: rgb(66, 143, 146);
+    
+}
+.blog-intro-words {
+    max-width:900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+}
+    
+    
+
+
+.bnav a:hover {
+    background-color: rgb(129, 122, 113);
+    border-radius: 50%;
+}
+
+.blog-boot {
+    background-color: rgb(0, 0, 0, .6);
+    background-image: url(blogimages/flowa.jpeg) ;
+    background-blend-mode: multiply;
+  
+    padding-bottom: 40px;
+}
+
+.crt-blgy {
+    width:100%;
+    max-width: 540px;
+    background:rgb(61, 101, 102);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    
+ 
+  
+}
+.box-c{
+    
+    
+    
+    background:rgb(61, 101, 102);
+    border-radius: 30px;
+    padding-left: 20px;
+    
+}
+.crt-her {
+    color: rgb(255, 255, 255);
+    
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    color: 3,3,3;
+    
+    padding: 20px;
+    font-weight: 14px;
+    border-radius: 40px;
+    font-size: 14px;
+    width: 32em;
+    color: rgb(67, 111, 112);
+    text-align: center;
+}
+
+.bet-cert{
+    border:none;
+    outline: none;
+    padding:10px 30px;
+    background: rgb(64, 117, 40);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.bet-cert a:hover{
+    background-color: rgb(83, 77, 77,0.6);
+}
+
+
+
+.blog-text-img{
+    float: left;
+    border-radius: 50%;
+    width: 350px;
+    height: 250px;
+}
+
+
+
+.blg-bg {
+    color: rgb(255, 255, 255);
+}
+
+.bet-cert a:hover {
+    background: rgb(51, 255, 0);
+}
+
+.blog-text-imga {
+    border-radius: 40%;
+    float: right;
+}
+
+.feto {
+    background-color: cadetblue;
+    color: black;
+    padding: .25em 0;
+}
+
+.fomo {
+    color: rgb(255, 255, 255);
+}
+
+.main-footer{
+    background-color: cadetblue;
+    color: white;
+    padding: .25em 0;
+}
+
+.wordak {
+    color: white;
+    text-align: center;
+}
+
+.bet-bye{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: rgb(146, 29, 29);
+    color: rgb(255, 255, 255)!important;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.bet-bye:hover{
+    background: rgb(238, 8, 8);
+}
+
+.bet-bye a:link {
+    
+    text-decoration: none!important;
+}
+
+
+
+
+
+
+.bet-bye a { color: inherit; 
+} 
+
+.bet-cert:hover{
+    background: rgb(104, 155, 27);
+}
+
+.fozo{
+    color: rgb(67, 111, 112);
+    justify-content: space-between;
+    text-wrap: wrap;
+    text-align: center;
+    text-indent: 40px;
+}
+.fazaaa{
+ float: left;   
+ border-radius: 50%;
+ align-items: center;
+ text-align: center;
+ 
+ 
+}
+.blog-text-imgb {
+    border-radius: 40%;
+}
+
+.fobo{
+    text-indent: 100px;
+}
+.falco{
+    text-indent: 50px;
+}
+
+.cont{
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    width:100%;
+    max-width: 540px;
+    background:rgb(61, 101, 102);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.Vis-container {
+    flex: 1;
+    position: relative;
+    list-style: armenian;
+}
+
+.testesty{
+    font-size: 1.25em;
+    text-align: center;
+    padding-right: auto;
+    
+}
+
+.testesty a:hover {
+    background-color: rgb(129, 122, 113);
+    border-radius: 50%;
+}
+
+.removal{
+    color: rgb(253, 247, 247);
+    background-color: red;
+    cursor: pointer;
+    border-radius: 40%;
+    text-align: center;
+    align-items: center;
+}
+
+.claist{
+    text-decoration: none;
+    color: rgb(82, 169, 172);
+    text-align: center;
+    border-bottom: 3px solid rgb(66, 143, 146);
+    font-size: 1.5em;
+
+}
+
+.culumbo{
+    border-bottom: 3px solid rgb(66, 143, 146);
+}
+
+
+
+.house ::before{
+    text-decoration: underline;
+}
+
+.house{
+    text-decoration: none ;
+    
+}
+.top-blog{
+    color: rgb(82,169,172);
+}
+
+.test{
+    background-color: black;
+    color: black;
+    background: black;
+    border-color: black;
+    border-width: 500px;
+}
+
+.pust{
+    border:none;
+    outline: none;
+    padding:10px 30px;
+    background: rgb(64, 117, 40);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+.clust{
+    border:none;
+    outline: none;
+    padding:10px 25px;
+    background: rgb(153, 30, 30);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.clust a:hover{
+background-color: red;
+}
+
+
+
+.pust:hover{
+    background-color: rgb(131, 192, 39);
+}
+
+.clust:hover{
+    background-color: red;
+}
