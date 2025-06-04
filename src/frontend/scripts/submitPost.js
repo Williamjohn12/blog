@@ -1,4 +1,4 @@
-import { HOST } from "../../util/config.js";
+
 /*function submitPost() {
   const boxA = document.getElementById("box-put");
 
@@ -27,6 +27,8 @@ const boxC = document.getElementById("box-putc");
   }
 
   const submitPost = async () => {
+
+    const HOST = "https://blog-l740.onrender.com"
     const title = document.getElementById("box-put").value;
     const content = document.getElementById("box-putb").value;
     const description = document.getElementById("box-putc").value;
