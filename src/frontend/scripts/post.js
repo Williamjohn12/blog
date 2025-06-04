@@ -1,4 +1,4 @@
-import { HOST } from "../../util/config";
+import { HOST } from "../../util/config.js";
 
 async function getPosts() {
     try {

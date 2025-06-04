@@ -1,4 +1,4 @@
-import { HOST } from "../../util/config";
+import { HOST } from "../../util/config.js";
 /*function submitPost() {
   const boxA = document.getElementById("box-put");
 

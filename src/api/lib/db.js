@@ -1,5 +1,5 @@
 import pg from 'pg';
-import { DBSTRING } from '../../util/config';
+import { DBSTRING } from '../../util/config.js';
 
 
 const { Client } = pg;
