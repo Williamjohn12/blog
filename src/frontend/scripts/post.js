@@ -1,7 +1,8 @@
-import { HOST } from "../../util/config.js";
 
+ const HOST = "https://blog-l740.onrender.com"
 async function getPosts() {
     try {
+         
         // Fetch posts data
         const response = await fetch(`${HOST}/get-all`);
         const data = await response.json();
