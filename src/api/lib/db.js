@@ -1,8 +1,10 @@
 import pg from 'pg';
+import dotenv from 'dotenv';
 
 const { Client } = pg;
 
 let clientInstance = null;
+dotenv.config();
 
 export const getDbClient = () => {
   if (clientInstance) {
@@ -12,11 +14,7 @@ export const getDbClient = () => {
   
   // Otherwise, create a new client instance
   clientInstance = new Client({
-    user: 'user',
-    password: 'test1234',
-    host: '127.0.0.1',
-    port: 5432,
-    database: 'user',
+    connectionString: process.env.DB_STRING
   });
 
   clientInstance.connect()
