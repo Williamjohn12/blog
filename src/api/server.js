@@ -1,8 +1,14 @@
 
 import postRouter from "./routes/post.routes.js"
+import appRouter from "./routes/app.routes.js"
 import express from "express"
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 
 // export test from "./routes/testo.route.js"
@@ -20,6 +26,11 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.use(express.static('blogger'));
 app.use(cors(corsOpts));
+// Serve static files from the frontend directory
+app.use(express.static(path.resolve("src/frontend")));
+// Serve images from the public folder outside the root
+app.use('/public', express.static(path.resolve(__dirname, '../../public')));
+//app.use(appRouter);
 app.use(postRouter);
 
 
